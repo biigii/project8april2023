@@ -1,0 +1,86 @@
+.top-nav {
+  height: 150px;
+  /* outline: 3px solid #f22; */
+  background-color: var(--colour1);
+  text-align: center;
+  line-height: 150px;
+  margin-bottom: 100px;
+}
+
+
+.section-1 {
+  height: 500px;
+  border: 2px solid;
+  padding: 10px
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.box:hover {
+  animation-name: do-animation;
+}
+
+@keyframes do-animation {
+  to {
+    rotate: 360deg;
+    background-color: blue;
+    border-radius: 50%;
+  }
+
+  /* 0% {
+    rotate: 0;
+  }
+
+  50% {
+     rotate: 360deg;
+     background-color: blue
+  }
+
+  100% {
+    rotate: 0;
+    scale: 2;
+    background-color: red;
+  } */
+}
+
+.button {
+  width: 140px;
+  height: 60px;
+  background-color: var(--colour2);
+  margin: 20px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  animation-iteration-count: infinite;
+  /* animation-delay: 1s; */
+  animation-fill-mode: forwards;
+  /* animation-direction: alternate; */
+  animation-play-state:paused;
+  animation-duration: 200ms;
+  animation-name: animate;
+  cursor: pointer;
+}
+
+.button:hover {
+  animation-play-state: running
+}
+
+@keyframes animate {
+    /* from {
+      
+    } */
+     to {
+      /* scale: 1.05; */
+      transform: skew(1deg, 1deg);
+     }
+}
